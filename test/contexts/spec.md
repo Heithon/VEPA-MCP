@@ -2,12 +2,12 @@
 
 适用于基于 Vue 3 + TypeScript + Vite + Element Plus + Pinia 的中大型前端项目。该文档为测试版，用于演示与验证 MCP 读取规范文档的能力，可按需裁剪与扩展。
 
-使用 vue-element-plus-admin这个框架进行开发
-框架文档的context7库的ID为：/kailong321200875/vue-element-plus-admin-doc
+使用 vue-element-plus-admin 这个框架进行开发，这个框架已经封装好表单、弹窗、表格、布局等常用组件。
+vue-element-plus-admin的context7 id为："/kailong321200875/vue-element-plus-admin-doc",通过调用'get-library-docs'工具获取相关文档
 
 ## 1. 技术栈与基础约定
 
-- **框架**: Vue 3 (Composition API, `<script setup>`)
+- **框架**: vue-element-plus-admin
 - **语言**: TypeScript（严格模式，禁用 `any`，尽量使用类型别名/字面量联合而非枚举）
 - **构建**: Vite（ESM 优先，按需打包）
 - **组件库**: Element Plus（统一主题与交互规范）

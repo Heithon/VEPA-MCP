@@ -24,10 +24,16 @@
     "type": "git",
     "url": "git+https://github.com/Heithon/VEPA-MCP.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["mcp", "context7", "vue-element-plus-admin", "admin", "ai"],
+  "author": "Silkide",
   "license": "ISC",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "vepa-mcp": "dist/index.js"
+  },
   "bugs": {
     "url": "https://github.com/Heithon/VEPA-MCP/issues"
   },

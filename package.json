@@ -15,6 +15,7 @@
     }
   },
   "scripts": {
+    "prepublishOnly": "pnpm build",
     "build": "rimraf dist && parcel build",
     "dev": "parcel watch",
     "start": "node dist/index.js",

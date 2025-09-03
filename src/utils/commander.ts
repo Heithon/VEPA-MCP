@@ -13,7 +13,7 @@ export function parseCliOptions(argv: string[] = process.argv): CliOptions {
 		.description("VEPA MCP server")
 		.option("--key <string>", "用于连接 context7 的服务密钥")
 		.option("--token <string>", "控制context7的返回值长度")
-		.option("--spec-dir <path>", "规范文档根目录")
+		.option("--spec-dir <path>", "规范文档目录, 默认为'./contexts/specs.md'")
 		.option("--page-temp-dir <path>", "页面模板根目录");
 
 	program.parse(argv);

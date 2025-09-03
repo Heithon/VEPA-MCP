@@ -35,6 +35,7 @@ export function registerGetLibraryDocsTool(server: McpServer) {
       const fetchDocsResponse = await client.getLibraryDocs(
         context7CompatibleLibraryID,
         {
+          type: "txt",
           tokens,
           topic,
         }
@@ -52,14 +53,7 @@ export function registerGetLibraryDocsTool(server: McpServer) {
       }
 
       // MCP 的 text 内容必须是字符串；将对象/错误统一转换为字符串
-      let text: string;
-      if (typeof fetchDocsResponse === "string") {
-        text = fetchDocsResponse;
-      } else if (fetchDocsResponse && typeof fetchDocsResponse === "object" && "error" in fetchDocsResponse) {
-        text = `Error: ${String((fetchDocsResponse as { error: string }).error)}`;
-      } else {
-        text = JSON.stringify(fetchDocsResponse, null, 2);
-      }
+      let text: string = fetchDocsResponse as string;
 
       return {
         content: [

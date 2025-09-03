@@ -82,10 +82,10 @@ export class Context7Client {
       return { error: `HTTP ${statusCode}: ${text}` };
     }
 
-    if (type === "txt") {
-      return await body.text();
+    if (type === "json") {
+      return (await body.json()) as DocsJsonResponse;
     }
-    return (await body.json()) as DocsJsonResponse;
+    return await body.text();
   }
 }
 

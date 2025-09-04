@@ -1,6 +1,6 @@
 {
   "name": "@silkide/vepa-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A MCP server designed for projects based on vue-element-plus-admin, integrating component documentation, project specifications, and template files into the AI's context.",
   "main": "dist/index.js",
   "source": "src/index.ts",
@@ -11,7 +11,7 @@
       "engines": {
         "node": ">=18"
       },
-      "sourceMap": true
+      "sourceMap": false
     }
   },
   "scripts": {

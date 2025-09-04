@@ -1,6 +1,6 @@
 {
-  "name": "vepa-mcp",
-  "version": "1.0.0",
+  "name": "@silkide/vepa-mcp",
+  "version": "1.0.1",
   "description": "A MCP server designed for projects based on vue-element-plus-admin, integrating component documentation, project specifications, and template files into the AI's context.",
   "main": "dist/index.js",
   "source": "src/index.ts",
@@ -11,10 +11,11 @@
       "engines": {
         "node": ">=18"
       },
-      "sourceMap": true
+      "sourceMap": false
     }
   },
   "scripts": {
+    "prepublishOnly": "pnpm build",
     "build": "rimraf dist && parcel build",
     "dev": "parcel watch",
     "start": "node dist/index.js",
@@ -24,7 +25,13 @@
     "type": "git",
     "url": "git+https://github.com/Heithon/VEPA-MCP.git"
   },
-  "keywords": ["mcp", "context7", "vue-element-plus-admin", "admin", "ai"],
+  "keywords": [
+    "mcp",
+    "context7",
+    "vue-element-plus-admin",
+    "admin",
+    "ai"
+  ],
   "author": "Silkide",
   "license": "ISC",
   "type": "module",

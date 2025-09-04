@@ -19,7 +19,7 @@ VEPA-MCP 现在已成为适用于各类项目的通用 MCP 服务器，LLM可以
 - Cursor, Claude Code, VSCode, Windsurf or another MCP Client
 - Context7 API Key，其实不要也可以，但是有key能提高请求频率。（[获取Context API Key](https://context7.com/dashboard)）
 
-本项目已发布为npm包，地址为：https://www.npmjs.com/package/@silkide/vepa-mcp，因此可以使用npx调用服务。下面以cursor中添加MCP服务器为例：
+本项目已发布为[npm包](https://www.npmjs.com/package/@silkide/vepa-mcp)，因此可以使用npx调用服务。下面以cursor中添加MCP服务器为例：
 
 进入Cursor的MCP服务器设置：`Settings` -> `Cursor Settings` -> `MCP` -> `Add new global MCP server`
 

@@ -21,7 +21,7 @@ The capability to obtain the latest documentation comes from the [Context7 proje
 - Cursor, Claude Code, VSCode, Windsurf, or another MCP client
 - Context7 API key — optional, but recommended to increase request throughput. ([Get a Context API Key](https://context7.com/dashboard))
 
-This project is published as an npm package: https://www.npmjs.com/package/@silkide/vepa-mcp, so you can invoke the service with `npx`. The example below shows how to add the MCP server in Cursor.
+This project is published as an [npm package](https://www.npmjs.com/package/@silkide/vepa-mcp), so you can invoke the service with `npx`. The example below shows how to add the MCP server in Cursor.
 
 Open Cursor’s MCP server settings: `Settings` -> `Cursor Settings` -> `MCP` -> `Add new global MCP server`
 
